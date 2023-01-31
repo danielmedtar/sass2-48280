@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/*VARIABLES*/
+/*Paletas de colores*/
+/*Variables para medidas*/
+/*Tamaños de pantallas*/
+/*mixins*/
+/* MIXINS*/
+/*Sin parámetros*/
+/*DECLARANDO EL MIXIN, LO ESTAMOS CREANDO*/
+/*@mixin con parametros*/
+/*YA DECLARAMOS EL MIXIN*/
+/*CONDICIONALES*/
+/*Para suma +
+Para resta el -
+Para mult el * (no acepta unidades)
+Para dividir se usa calc(valor / numero)
+*/
+h1 {
+  margin-bottom: 5px;
+}
+
+/*Usando el mixin*/
+/*Para usarlo siempre se necesita el @include*/
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  background-color: red;
+}
+
+.card {
+  width: 60px;
+  height: 150px;
+}
+
+.boton, .boton-cancelar, .boton-aceptar {
+  width: 150px;
+  padding: 6px 10px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.boton-aceptar {
+  background-color: green;
+  color: yellow;
+}
+
+.boton-cancelar {
+  background-color: red;
+  color: white;
+}
+
+/*CONDICIONALES*/
+/*@if*/
+body {
+  background-color: aquamarine;
+}
+
+/*Bucle for*/
+/*En programacion es buena practica que para los bucles se hagan sobre variables "i"*/
+.col-1 {
+  width: 10%;
+}
+
+.col-2 {
+  width: 20%;
+}
+
+.col-3 {
+  width: 30%;
+}
+
+.col-4 {
+  width: 40%;
+}
+
+.col-5 {
+  width: 50%;
+}
+
+.col-6 {
+  width: 60%;
+}
+
+.col-7 {
+  width: 70%;
+}
+
+.col-8 {
+  width: 80%;
+}
+
+.col-9 {
+  width: 90%;
+}
+
+.col-10 {
+  width: 100%;
+}
+
+p:nth-of-type(1) {
+  font-size: 19px;
+  background-color: #9a9a9a;
+}
+
+p:nth-of-type(2) {
+  font-size: 19px;
+  background-color: gray;
+}
+
+p:nth-of-type(3) {
+  font-size: 19px;
+  background-color: #676767;
+}
+
+p:nth-of-type(4) {
+  font-size: 19px;
+  background-color: #4d4d4d;
+}
+
+p:nth-of-type(5) {
+  font-size: 19px;
+  background-color: #343434;
+}
+
+/*@EACH*/
+#blue {
+  color: blue;
+}
+
+#yellow {
+  color: yellow;
+}
+
+#black {
+  color: black;
+}
+
+.texto-xg {
+  font-size: 32px;
+}
+
+.texto-l {
+  font-size: 24px;
+}
+
+.texto-s {
+  font-size: 18px;
+}
+
+/*MAPAS + EACH*/
+/*Declaramos nuestro mapa*/
+/*Creamos el bucle para usar los valores del mapa*/
+.btn-twitter {
+  background-color: #55acee;
+}
+
+.btn-facebook {
+  background-color: #3a5795;
+}
+
+.btn-gmail {
+  background-color: #C25E30;
+}
+
+/*MAP GET*/
+div {
+  background-color: #3673D9;
+  text-align: center;
+  padding: 1rem;
+  font-size: 35px;
+}
+
+/*# sourceMappingURL=styles.css.map */

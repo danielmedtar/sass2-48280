@@ -1,0 +1,59 @@
+/*Para suma +
+Para resta el -
+Para mult el * (no acepta unidades)
+Para dividir se usa calc(valor / numero)
+*/
+h1 {
+    margin-bottom: calc($espaciado / 10);
+}
+
+/*Usando el mixin*/
+/*Para usarlo siempre se necesita el @include*/
+.contenedor {
+    @include flex-column-centrado;
+    // @include sizes(30px, 60px);
+    background-color: red;
+}
+
+.card {
+    @include sizes(60px, 150px)
+}
+
+.boton {
+    width: 150px;
+	padding: 6px 10px;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.boton-aceptar {
+    @extend .boton;
+    background-color: green;
+    color: yellow;
+}
+
+.boton-cancelar {
+    @extend .boton;
+    background-color: red;
+    color: white;
+}
+
+
+/*CONDICIONALES*/
+
+/*@if*/
+body {
+    @if $fiesta == pascuas {
+        background-color: pink;
+        color: #000;
+    } @else if $fiesta == padre {
+        background-color: blue;
+        color: white;
+    } @else if $fiesta == navidad {
+        background-color: red;
+        color: blue;
+    } @else {
+        background-color: $bg-body;
+    }
+}
+

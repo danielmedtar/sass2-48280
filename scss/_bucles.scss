@@ -1,0 +1,64 @@
+/*Bucle for*/
+/*En programacion es buena practica que para los bucles se hagan sobre variables "i"*/
+@for $i from 1 through 10 {
+	.col-#{$i}{
+	    width: 10% * $i;
+	}
+}
+
+@for $i from 1 through 5 {
+    p:nth-of-type(#{$i}) {
+        font-size: 19px;
+        background-color: darken($gray, $i * 10%);
+    }
+}
+
+/*@EACH*/
+@each $color in blue, yellow, black {
+	##{$color}{
+	color:#{$color};
+	}
+}
+
+$textos:
+    "xg" 32px,
+    "l" 24px,
+    "s" 18px;
+
+    @each $nombre, $fs in $textos {
+        .texto-#{$nombre} {
+            font-size: $fs;
+        }
+    }
+
+    /*MAPAS + EACH*/
+    /*Declaramos nuestro mapa*/
+$redes: ( 
+    twitter: #55acee,
+    facebook:  #3a5795,
+    gmail: #C25E30
+); 
+
+/*Creamos el bucle para usar los valores del mapa*/
+@each $redSocial, $color in $redes {
+   .btn-#{$redSocial} {
+       background-color: $color;
+   }
+}
+
+/*MAP GET*/
+$estilos: (
+  color: #3673D9,
+  centro: center,
+  tFuente: 35px,
+  espacio : 1rem
+);
+
+div {
+  background-color: map-get($estilos, color);
+  text-align: map-get($estilos, centro);
+  padding: map-get($estilos, espacio);
+  font-size:map-get($estilos, tFuente);
+}
+
+

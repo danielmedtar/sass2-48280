@@ -1,0 +1,39 @@
+/*VARIABLES*/
+$bg-body: aquamarine;
+/*Paletas de colores*/
+$blue: #4285F4;
+$green: #33D374;
+$gray: #b3b3b3;
+
+/*Variables para medidas*/
+$ancho: 720px;
+$alto: 720px;
+$espaciado: 50px;
+
+/*Tamaños de pantallas*/
+$pantalla-md: 768px;
+$pantalla-g: 992px;
+$pantalla-xg: 1024px;
+
+
+/*mixins*/
+/* MIXINS*/
+/*Sin parámetros*/
+/*DECLARANDO EL MIXIN, LO ESTAMOS CREANDO*/
+@mixin flex-column-centrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+/*@mixin con parametros*/
+/*YA DECLARAMOS EL MIXIN*/
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+/*CONDICIONALES*/
+$fiesta: ninguna;
+
